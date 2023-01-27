@@ -125,7 +125,10 @@ namespace WindowsFormsApp1
                 {
                     
                     if (direction.Value > Min)
-                    { continue; }
+                    { 
+                        direction.Value = int.MaxValue;
+                        continue; 
+                    }
                     Min = direction.Value;
                     GR = direction.GostRight;
                     direction.Value = int.MaxValue;
