@@ -12,6 +12,6 @@ namespace WindowsFormsApp1
         {
         }
         public bool GostRight;
-        public int Value;
+        public int Value = int.MaxValue;
     }
 }
